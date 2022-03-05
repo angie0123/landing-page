@@ -10,16 +10,58 @@
 :root{
     --dark-bg-color: #1F2937;
     --main-hero-text: #F9FAF8;
-    --main-hero-text-weight: extra-bold;
+    --main-hero-text-weight: 900;
     --main-hero-text-size: 48px;
     --hero-secondary-text-size: 18px;
     --hero-secondary-text-color: #E5E7EB;
     --header-logo-text-color: #F9FAF8;
     --header-logo-text-size: 24px;
     --button-color: #3882F6;
+    --page-width: 1400px;
 }
 .hero{
     height: 100vh;
     background: var(--dark-bg-color);
+}
+
+header{
+    width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon{
+    font-size: var(--header-logo-text-size);
+    color: var(--header-logo-text-color);
+    font-weight: 900;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 500px;
+
+}
+
+ul a{
+    text-decoration: none;
+    color: var(--hero-secondary-text-color);
+    font-size: var(--hero-secondary-text-size)
 }
