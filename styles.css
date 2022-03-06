@@ -4,8 +4,6 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-.body{
-}
 
 :root{
     --dark-bg-color: #1F2937;
@@ -21,7 +19,12 @@
     --page-width: 1400px;
     --info-header-text: #1F2937;
     --info-header-text-size: 36px;
-    --info-header-text-weight: 900; 
+    --info-header-text-weight: 900;
+    --quote-section-bg: #E5E7EB;
+    --quote-text: #1F2937;
+    --quote-text-size: 36px;
+    --quote-font-weight:  300;
+    
 }
 
 /*+++++++++++++++++ HERO-SECTION +++++++++++++++ */
@@ -182,4 +185,29 @@ ul a{
     color: var(--info-header-text);
     line-height: 1.6rem;
     text-align: center;
+}
+
+/* +++++++++++++ TESTIMONIAL-SECTION +++++++++ */
+
+.testimonial-section{
+    height: 60vh;
+    background: var(--quote-section-bg);
+    font-size: var(--quote-text-size);
+    font-weight: var(--quote-font-weight);
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-section blockquote{
+    width: 60%;
+}
+
+.testimonial-section .author{
+    font-weight: 900;
+    font-style: normal;
+    display: block;
+    text-align: right;
+    font-size: 28px;
 }
