@@ -2,9 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .body{
-    font-family: 'Roboto', sans-serif;
 }
 
 :root{
@@ -17,8 +17,14 @@
     --header-logo-text-color: #F9FAF8;
     --header-logo-text-size: 24px;
     --button-color: #3882F6;
+    --call-to-action-bg-color: #3882F6;
     --page-width: 1400px;
+    --info-header-text: #1F2937;
+    --info-header-text-size: 36px;
+    --info-header-text-weight: 900; 
 }
+
+/*+++++++++++++++++ HERO-SECTION +++++++++++++++ */
 .hero{
     height: 100vh;
     background: var(--dark-bg-color);
@@ -127,4 +133,53 @@ ul a{
     flex: 1;
     background: rgba(128, 128, 128, 0.445);
     color: var(--main-hero-text)
+}
+
+/* ++++++++++++++++  INFO_SECTION +++++++++++++++  */
+
+
+.info-section{
+    height: 80vh;
+    padding-top: 70px;
+    width: var(--page-width);
+    margin: 0 auto;
+}
+
+.info-section h2{
+    color:var(--info-header-text);
+    font-size: var(--info-header-text-size);
+    font-weight:var(--info-header-text-weight);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.info-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    row-gap: 10px;
+}
+
+.card-image{
+    width: 200px;
+    height: 200px;
+    border: 4px solid var(--button-color);
+    border-radius: 15px;
+}
+
+.card p{
+    font-size: var(--hero-secondary-text-size);
+    color: var(--info-header-text);
+    line-height: 1.6rem;
+    text-align: center;
 }
