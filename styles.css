@@ -14,9 +14,8 @@
     --hero-secondary-text-color: #E5E7EB;
     --header-logo-text-color: #F9FAF8;
     --header-logo-text-size: 24px;
-    --button-color: #3882F6;
-    --call-to-action-bg-color: #3882F6;
-    --page-width: 1400px;
+    --primary-blue: #3882F6;
+    --page-width: 1100px;
     --info-header-text: #1F2937;
     --info-header-text-size: 36px;
     --info-header-text-weight: 900;
@@ -94,7 +93,7 @@ ul a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 15px;
     padding-right: 100px;
     width: 50%;
 }
@@ -103,6 +102,7 @@ ul a{
     color: var(--main-hero-text);
     font-size: var(--main-hero-text-size);
     font-weight: var(--main-hero-text-weight);
+    line-height: .9em;
 }
 
 .hero-content-left p{
@@ -113,7 +113,7 @@ ul a{
 .hero-content-left .sign-up-button{
     padding: 10px;
     width: 100px;
-    background: var(--button-color);
+    background: var(--primary-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +160,7 @@ ul a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -176,7 +176,7 @@ ul a{
 .card-image{
     width: 200px;
     height: 200px;
-    border: 4px solid var(--button-color);
+    border: 4px solid var(--primary-blue);
     border-radius: 15px;
 }
 
@@ -195,6 +195,7 @@ ul a{
     font-size: var(--quote-text-size);
     font-weight: var(--quote-font-weight);
     font-style: italic;
+    line-height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,6 +203,7 @@ ul a{
 
 .testimonial-section blockquote{
     width: 60%;
+    padding: 50px;
 }
 
 .testimonial-section .author{
@@ -221,7 +223,7 @@ ul a{
 .call-to-action .banner{
     width: var(--page-width);
     margin: 0 auto;
-    background: var(--button-color);
+    background: var(--primary-blue);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -248,4 +250,16 @@ ul a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*++++++++ FOOTER +++++++++++ */
+
+footer{
+    height: 8vh;
+    background: var(--dark-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-hero-text);
+    font-size: var(--hero-secondary-text-size);
 }
