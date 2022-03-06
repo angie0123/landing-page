@@ -211,3 +211,41 @@ ul a{
     text-align: right;
     font-size: 28px;
 }
+
+.call-to-action{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.call-to-action .banner{
+    width: var(--page-width);
+    margin: 0 auto;
+    background: var(--button-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+    border-radius: 17px;
+}
+
+.banner-info{
+    color: var(--main-hero-text);
+    font-size: 18px; 
+}
+
+.banner-info h3{
+    font-size: 32px;
+}
+
+.banner .call-button{
+    border: 2px solid var(--main-hero-text);
+    border-radius: 7px;
+    width: 130px;
+    padding: 7px;
+    color: var(--main-hero-text);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
