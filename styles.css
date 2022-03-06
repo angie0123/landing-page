@@ -22,6 +22,8 @@
 .hero{
     height: 100vh;
     background: var(--dark-bg-color);
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -64,4 +66,65 @@ ul a{
     text-decoration: none;
     color: var(--hero-secondary-text-color);
     font-size: var(--hero-secondary-text-size)
+}
+
+.hero-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.hero-content{
+    display: flex;
+    width: var(--page-width);
+    margin: 0 auto;
+}
+
+.hero-content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    padding-right: 100px;
+    width: 50%;
+}
+
+.hero-content-left h1{
+    color: var(--main-hero-text);
+    font-size: var(--main-hero-text-size);
+    font-weight: var(--main-hero-text-weight);
+}
+
+.hero-content-left p{
+    color: var(--hero-secondary-text-color);
+    font-size: var(--hero-secondary-text-size);
+}
+
+.hero-content-left .sign-up-button{
+    padding: 10px;
+    width: 100px;
+    background: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.hero-content-left .sign-up-button:hover{
+    cursor: pointer;
+}
+
+.hero-content-left .sign-up-button a{
+    text-decoration:none;
+    color: var(--hero-secondary-text-color);
+}
+
+.hero-content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: rgba(128, 128, 128, 0.445);
+    color: var(--main-hero-text)
 }
